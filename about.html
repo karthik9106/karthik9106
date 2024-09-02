@@ -1,0 +1,1659 @@
+<html>
+    <head>
+        <title>CookIn Bot</title>
+    </head>
+    <link rel="stylesheet" href="aboutstyles.css">
+    <body>
+        <header>
+            <div class="container">
+                <h1>CookIn Bot</h1>
+            </div>Tourisms
+            <marquee scrollamount="25">  <h2 style="color: #17153B; text-align: center;">
+              Say goodbye to boring meals with AI-powered recipe recommendations, meal plans creation, and more... 7777+ items saved for far... </h2> </marquee>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><a href="./Registration.html">Registration</a></li>
+                <li><a href="./login.html">Login</a></li>
+            </ul>
+        </nav>
+        document.addEventListener('DOMContentLoaded', () => {
+    const veganRecipes = {
+        'Veg Curry': `
+            <h3>Veg Curry</h3>    <div style="float: right; margin-left: 20px; margin-bottom: 20px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width: 800px; height: auto;">
+    </div>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li>1 cup mixed vegetables (carrots, beans, peas, potatoes)</li>
+                <li>1 onion, finely chopped</li>
+                <li>2 tomatoes, chopped</li>
+                <li>1 cup coconut milk</li>
+                <li>2 tbsp ginger-garlic paste</li>
+                <li>2 tbsp curry powder</li>
+                <li>1 tsp turmeric powder</li>
+                <li>1 tsp red chili powder</li>
+                <li>2 tbsp oil</li>
+                <li>Salt to taste</li>
+                <li>Fresh cilantro for garnish</li>
+            </ul>
+            <h4>Instructions:</h4>
+            <ol>
+                <li>Prepare Ingredients: Chop vegetables, onion, and tomatoes.</li>
+                <li>Heat Oil: In a pan, heat oil over medium heat.</li>
+                <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                <li>Add Tomatoes: Add chopped tomatoes and cook until they soften.</li>
+                <li>Add Spices: Stir in curry powder, turmeric, red chili powder, and salt. Cook for 2 minutes.</li>
+                <li>Add Vegetables: Add mixed vegetables and cook for 5 minutes.</li>
+                <li>Add Coconut Milk: Pour in coconut milk and simmer until vegetables are tender.</li>
+                <li>Garnish: Garnish with fresh cilantro and serve with rice or bread.</li>
+            </ol>
+        `,
+    'Aloo Gobi': `
+        <h3>Aloo Gobi</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+        <h4>Ingredients:</h4>
+        <ul>
+            <li>2 cups cauliflower florets</li>
+            <li>2 potatoes, peeled and cubed</li>
+            <li>1 onion, chopped</li>
+            <li>2 tomatoes, chopped</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1 tsp turmeric powder</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp garam masala</li>
+            <li>2 tbsp oil</li>
+            <li>Salt to taste</li>
+            <li>Fresh cilantro for garnish</li>
+        </ul>
+        <h4>Instructions:</h4>
+        <ol>
+            <li>Heat oil in a pan and add cumin seeds.</li>
+            <li>Once they splutter, add chopped onions and sauté until golden brown.</li>
+            <li>Add tomatoes and cook until soft.</li>
+            <li>Add turmeric, red chili powder, and salt. Stir well.</li>
+            <li>Add potatoes and cauliflower, and mix well to coat with spices.</li>
+            <li>Cover and cook on low heat until vegetables are tender.</li>
+            <li>Sprinkle garam masala and mix.</li>
+            <li>Garnish with cilantro and serve hot.</li>
+        </ol>
+    `,
+
+    'Paneer Butter Masala': `
+        <h3>Paneer Butter Masala</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+        <h4>Ingredients:</h4>
+        <ul>
+            <li>200g paneer, cubed</li>
+            <li>2 onions, finely chopped</li>
+            <li>2 tomatoes, pureed</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1/2 tsp turmeric powder</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp garam masala</li>
+            <li>2 tbsp butter</li>
+            <li>1/2 cup cream</li>
+            <li>Salt to taste</li>
+            <li>Fresh cilantro for garnish</li>
+        </ul>
+        <h4>Instructions:</h4>
+        <ol>
+            <li>Heat butter in a pan and add cumin seeds.</li>
+            <li>Once they splutter, add onions and sauté until golden brown.</li>
+            <li>Add ginger-garlic paste and sauté for 2 minutes.</li>
+            <li>Add tomato puree, turmeric, red chili powder, and salt. Cook until oil separates.</li>
+            <li>Add paneer cubes and mix gently.</li>
+            <li>Add cream and simmer for 5 minutes.</li>
+            <li>Sprinkle garam masala and mix.</li>
+            <li>Garnish with cilantro and serve hot with naan or rice.</li>
+        </ol>
+    `,
+
+    'Chana Masala': `
+        <h3>Chana Masala</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+        <h4>Ingredients:</h4>
+        <ul>
+            <li>1 cup chickpeas, soaked overnight and boiled</li>
+            <li>1 onion, chopped</li>
+            <li>2 tomatoes, chopped</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1 tsp turmeric powder</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp garam masala</li>
+            <li>2 tbsp oil</li>
+            <li>Salt to taste</li>
+            <li>Fresh cilantro for garnish</li>
+        </ul>
+        <h4>Instructions:</h4>
+        <ol>
+            <li>Heat oil in a pan and add cumin seeds.</li>
+            <li>Add chopped onions and sauté until golden brown.</li>
+            <li>Add ginger-garlic paste and cook for 2 minutes.</li>
+            <li>Add chopped tomatoes, turmeric, red chili powder, and salt. Cook until oil separates.</li>
+            <li>Add boiled chickpeas and mix well.</li>
+            <li>Cover and cook on low heat for 10 minutes.</li>
+            <li>Sprinkle garam masala and mix.</li>
+            <li>Garnish with cilantro and serve hot with rice or roti.</li>
+        </ol>
+    `,
+
+    'Palak Paneer': `
+        <h3>Palak Paneer</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+        <h4>Ingredients:</h4>
+        <ul>
+            <li>200g paneer, cubed</li>
+            <li>2 cups spinach leaves, blanched and pureed</li>
+            <li>1 onion, chopped</li>
+            <li>2 tomatoes, chopped</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1/2 tsp turmeric powder</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp garam masala</li>
+            <li>2 tbsp oil</li>
+            <li>Salt to taste</li>
+            <li>Fresh cream for garnish</li>
+        </ul>
+        <h4>Instructions:</h4>
+        <ol>
+            <li>Heat oil in a pan and add cumin seeds.</li>
+            <li>Add chopped onions and sauté until golden brown.</li>
+            <li>Add ginger-garlic paste and cook for 2 minutes.</li>
+            <li>Add tomatoes, turmeric, red chili powder, and salt. Cook until oil separates.</li>
+            <li>Add spinach puree and mix well.</li>
+            <li>Add paneer cubes and simmer for 5 minutes.</li>
+            <li>Sprinkle garam masala and mix.</li>
+            <li>Garnish with fresh cream and serve hot with naan or roti.</li>
+        </ol>
+    `,
+
+    'Baingan Bharta': `
+        <h3>Baingan Bharta</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+        <h4>Ingredients:</h4>
+        <ul>
+            <li>2 large eggplants</li>
+            <li>1 onion, chopped</li>
+            <li>2 tomatoes, chopped</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1 tsp turmeric powder</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp garam masala</li>
+            <li>2 tbsp oil</li>
+            <li>Salt to taste</li>
+            <li>Fresh cilantro for garnish</li>
+        </ul>
+        <h4>Instructions:</h4>
+        <ol>
+            <li>Roast the eggplants directly on the flame until charred. Peel and mash the flesh.</li>
+            <li>Heat oil in a pan and add cumin seeds.</li>
+            <li>Add chopped onions and sauté until golden brown.</li>
+            <li>Add ginger-garlic paste and cook for 2 minutes.</li>
+            <li>Add chopped tomatoes, turmeric, red chili powder, and salt. Cook until oil separates.</li>
+            <li>Add mashed eggplant and mix well.</li>
+            <li>Sprinkle garam masala and mix.</li>
+            <li>Garnish with cilantro and serve hot with roti.</li>
+        </ol>
+    `,
+
+    'Rajma': `
+        <h3>Rajma</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+        <h4>Ingredients:</h4>
+        <ul>
+            <li>1 cup kidney beans, soaked overnight and boiled</li>
+            <li>1 onion, chopped</li>
+            <li>2 tomatoes, chopped</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li>1 tsp cumin seeds</li>
+            <li>1/2 tsp turmeric powder</li>
+            <li>1 tsp red chili powder</li>
+            <li>1 tsp garam masala</li>
+            <li>2 tbsp oil</li>
+            <li>Salt to taste</li>
+            <li>Fresh cilantro for garnish</li>
+        </ul>
+        <h4>Instructions:</h4>
+        <ol>
+            <li>Heat oil in a pan and add cumin seeds.</li>
+            <li>Add chopped onions and sauté until golden brown.</li>
+            <li>Add ginger-garlic paste and cook for 2 minutes.</li>
+            <li>Add chopped tomatoes, turmeric, red chili powder, and salt. Cook until oil separates.</li>
+            <li>Add boiled kidney beans and mix well.</li>
+            <li>Cover and cook on low heat for 15 minutes.</li>
+            <li>Sprinkle garam masala and mix.</li>
+            <li>Garnish with cilantro and serve hot with rice or roti.</li>
+        </ol>
+    `,
+            'Dal Tadka': `
+                <div class="recipe">
+                    <h3>Dal Tadka</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>1 cup toor dal (pigeon peas)</li>
+                        <li>1 onion, chopped</li>
+                        <li>2 tomatoes, chopped</li>
+                        <li>1 tbsp ginger-garlic paste</li>
+                        <li>1 tsp cumin seeds</li>
+                        <li>1 tsp mustard seeds</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tsp red chili powder</li>
+                        <li>1 tsp garam masala</li>
+                        <li>2 tbsp oil</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh cilantro for garnish</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Cook Dal: In a pot, cook toor dal with water until soft.</li>
+                        <li>Prepare Tadka: Heat oil in a pan, add cumin seeds and mustard seeds.</li>
+                        <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                        <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                        <li>Add Tomatoes and Spices: Add tomatoes, turmeric, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                        <li>Combine: Add cooked dal to the pan and mix well. Simmer for 5 minutes.</li>
+                        <li>Garnish: Sprinkle garam masala and garnish with fresh cilantro.</li>
+                    </ol>
+                </div>
+            `,
+            'Vegetable Biryani': `
+                <div class="recipe">
+                    <h3>Vegetable Biryani</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>1 cup basmati rice</li>
+                        <li>1 cup mixed vegetables (carrots, peas, beans)</li>
+                        <li>1 onion, sliced</li>
+                        <li>2 tomatoes, chopped</li>
+                        <li>1 cup yogurt</li>
+                        <li>2 tbsp biryani masala</li>
+                        <li>1 tsp cumin seeds</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tsp red chili powder</li>
+                        <li>2 tbsp oil</li>
+                        <li>Fresh cilantro and mint for garnish</li>
+                        <li>Salt to taste</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Cook Rice: Cook basmati rice until 70% done. Drain and set aside.</li>
+                        <li>Prepare Vegetables: Heat oil in a pan, add cumin seeds, onions, and sauté until golden brown.</li>
+                        <li>Add Tomatoes and Spices: Add chopped tomatoes, biryani masala, turmeric, red chili powder, and salt. Cook for 5 minutes.</li>
+                        <li>Add Vegetables and Yogurt: Stir in mixed vegetables and yogurt. Cook until vegetables are tender.</li>
+                        <li>Layer Biryani: In a large pot, layer partially cooked rice and vegetable mixture. Garnish with fresh cilantro and mint.</li>
+                        <li>Cook: Cover and cook on low heat for 15 minutes.</li>
+                    </ol>
+                </div>
+            `,
+            'Kadai Paneer': `
+                <div class="recipe">
+                    <h3>Kadai Paneer</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>250 grams paneer, cubed</li>
+                        <li>1 onion, chopped</li>
+                        <li>1 bell pepper, chopped</li>
+                        <li>2 tomatoes, chopped</li>
+                        <li>2 tbsp kadai masala</li>
+                        <li>1 tbsp ginger-garlic paste</li>
+                        <li>1 tsp cumin seeds</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tsp red chili powder</li>
+                        <li>2 tbsp oil</li>
+                        <li>Salt to taste</li>
+                        <li>Fresh cilantro for garnish</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Heat Oil: In a pan, heat oil over medium heat and add cumin seeds.</li>
+                        <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                        <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                        <li>Add Tomatoes and Spices: Add tomatoes, kadai masala, turmeric, red chili powder, and salt. Cook until oil separates.</li>
+                        <li>Add Vegetables: Add bell pepper and cook for 5 minutes.</li>
+                        <li>Add Paneer: Stir in cubed paneer and cook for another 5 minutes.</li>
+                        <li>Garnish: Garnish with fresh cilantro before serving.</li>
+                    </ol>
+                </div>
+            `,
+            'Tikki Chaat': `
+                <div class="recipe">
+                    <h3>Tikki Chaat</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>4 aloo tikkis (potato patties)</li>
+                        <li>1 cup chickpeas, boiled</li>
+                        <li>1 cup yogurt</li>
+                        <li>1 tsp chaat masala</li>
+                        <li>1 tsp cumin powder</li>
+                        <li>1 tsp red chili powder</li>
+                        <li>1 tbsp tamarind chutney</li>
+                        <li>1 tbsp green chutney</li>
+                        <li>Chopped onions and tomatoes for garnish</li>
+                        <li>Fresh cilantro for garnish</li>
+                        <li>Sev for garnish</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Prepare Tikkis: Fry aloo tikkis until golden brown and set aside.</li>
+                        <li>Assemble: Place tikkis on a plate, top with boiled chickpeas.</li>
+                        <li>Add Yogurt: Pour yogurt over the tikkis and chickpeas.</li>
+                        <li>Add Chutneys: Drizzle tamarind and green chutneys over the top.</li>
+                        <li>Add Spices: Sprinkle chaat masala, cumin powder, and red chili powder.</li>
+                        <li>Garnish: Garnish with chopped onions, tomatoes, cilantro, and sev.</li>
+                    </ol>
+                </div>
+            `,
+            'Paneer Tikka': `
+                <div class="recipe">
+                    <h3>Paneer Tikka</h3>  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrT4QA5hNcQLYSrIgTYv3XYtoDQQ2vCKyLdA&s" alt="Veg Curry" style="width:100%; max-width:600px; height:auto;">
+                    <h4>Ingredients:</h4>
+                    <ul>
+                        <li>250 grams paneer, cubed</li>
+                        <li>1 cup yogurt</li>
+                        <li>2 tbsp tandoori masala</li>
+                        <li>1 tbsp ginger-garlic paste</li>
+                        <li>1 tsp turmeric powder</li>
+                        <li>1 tsp red chili powder</li>
+                        <li>1 tbsp lemon juice</li>
+                        <li>1 tbsp oil</li>
+                        <li>Salt to taste</li>
+                        <li>Chopped bell peppers and onions for skewering</li>
+                    </ul>
+                    <h4>Instructions:</h4>
+                    <ol>
+                        <li>Prepare Marinade: In a bowl, mix yogurt, tandoori masala, ginger-garlic paste, turmeric, red chili powder, lemon juice, and salt.</li>
+                        <li>Marinate Paneer: Add cubed paneer to the marinade and coat well. Marinate for at least 1 hour.</li>
+                        <li>Prepare Skewers: Thread marinated paneer, bell peppers, and onions onto skewers.</li>
+                        <li>Grill: Grill on a preheated grill or oven at 200°C (400°F) for 15 minutes, turning occasionally.</li>
+                        <li>Serve: Serve hot with green chutney and lemon wedges.</li>
+                    </ol>
+                </div>
+            `,
+        // Add other vegan recipes here...
+    };
+
+    const nonVeganRecipes = {
+            'Chicken Curry': `
+                <h3>Chicken Curry</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams chicken, cut into pieces</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>2 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pan, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                    <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Chicken: Add chicken pieces and cook until browned.</li>
+                    <li>Add Water and Simmer: Add enough water to cover the chicken. Simmer until chicken is cooked through.</li>
+                    <li>Garnish: Sprinkle garam masala and garnish with fresh cilantro.</li>
+                </ol>
+            `,
+            'Butter Chicken': `
+                <h3>Butter Chicken</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams chicken, boneless and skinless</li>
+                    <li>1 cup yogurt</li>
+                    <li>2 tbsp ginger-garlic paste</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, pureed</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1 cup cream</li>
+                    <li>2 tbsp butter</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Marinate Chicken: Marinate chicken with yogurt, ginger-garlic paste, and salt for at least 1 hour.</li>
+                    <li>Grill Chicken: Grill or cook the marinated chicken in a pan until cooked through.</li>
+                    <li>Prepare Sauce: Heat butter in a pan, add cumin seeds, and sauté onions until golden brown.</li>
+                    <li>Add Tomatoes and Spices: Add tomato puree, coriander powder, turmeric, red chili powder, and salt. Cook until oil separates.</li>
+                    <li>Add Chicken and Cream: Add cooked chicken and cream to the pan. Simmer for 10 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro before serving.</li>
+                </ol>
+            `,
+            'Rogan Josh': `
+                <h3>Rogan Josh</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams lamb or goat meat, cut into pieces</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>2 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pan, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                    <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, coriander powder, turmeric, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Meat: Add meat pieces and cook until browned.</li>
+                    <li>Add Water and Simmer: Add enough water to cover the meat. Simmer until meat is tender and cooked through.</li>
+                    <li>Garnish: Sprinkle garam masala and garnish with fresh cilantro.</li>
+                </ol>
+            `,
+            'Chicken Biryani': `
+                <h3>Chicken Biryani</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup basmati rice</li>
+                    <li>500 grams chicken, cut into pieces</li>
+                    <li>1 onion, sliced</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 cup yogurt</li>
+                    <li>2 tbsp biryani masala</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>2 tbsp oil</li>
+                    <li>Fresh cilantro and mint for garnish</li>
+                    <li>Salt to taste</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Cook Rice: Cook basmati rice until 70% done. Drain and set aside.</li>
+                    <li>Prepare Chicken: Heat oil in a pan, add cumin seeds, and sauté onions until golden brown.</li>
+                    <li>Add Tomatoes and Spices: Add chopped tomatoes, biryani masala, turmeric, red chili powder, and salt. Cook for 5 minutes.</li>
+                    <li>Add Chicken and Yogurt: Stir in chicken and yogurt. Cook until chicken is tender.</li>
+                    <li>Layer Biryani: In a large pot, layer partially cooked rice and chicken mixture. Garnish with fresh cilantro and mint.</li>
+                    <li>Cook: Cover and cook on low heat for 15 minutes.</li>
+                </ol>
+            `,
+            'Tandoori Chicken': `
+                <h3>Tandoori Chicken</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 whole chicken, cut into pieces</li>
+                    <li>1 cup yogurt</li>
+                    <li>2 tbsp tandoori masala</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1 tbsp lemon juice</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Chopped onions and lemon wedges for serving</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Marinate Chicken: In a bowl, mix yogurt, tandoori masala, ginger-garlic paste, turmeric, red chili powder, lemon juice, and salt. Marinate chicken for at least 2 hours.</li>
+                    <li>Grill Chicken: Preheat the grill or oven to 200°C (400°F). Grill chicken until cooked through and slightly charred, about 20-25 minutes.</li>
+                    <li>Serve: Serve hot with chopped onions and lemon wedges.</li>
+                </ol>
+            `,
+            'Lamb Vindaloo': `
+                <h3>Lamb Vindaloo</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams lamb, cut into pieces</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>2 tbsp vinegar</li>
+                    <li>2 tbsp vindaloo paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pan, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                    <li>Add Vindaloo Paste: Stir in vindaloo paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric, red chili powder, and salt. Cook until tomatoes soften.</li>
+                    <li>Add Lamb: Add lamb pieces and cook until browned.</li>
+                    <li>Add Vinegar and Simmer: Add vinegar and enough water to cover the lamb. Simmer until lamb is tender.</li>
+                    <li>Garnish: Garnish with fresh cilantro before serving.</li>
+                </ol>
+            `,
+            'Fish Curry': `
+                <h3>Fish Curry</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams fish fillets (e.g., cod or tilapia), cut into pieces</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>2 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1 cup coconut milk</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pan, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                    <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric, red chili powder, coriander powder, and salt. Cook until tomatoes soften.</li>
+                    <li>Add Fish: Add fish pieces and cook until fish is cooked through.</li>
+                    <li>Add Coconut Milk: Pour in coconut milk and simmer for 5 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro before serving.</li>
+                </ol>
+            `,
+            'Korma': `
+                <h3>Korma</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams chicken or lamb, cut into pieces</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1/2 cup yogurt</li>
+                    <li>2 tbsp korma paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 cup cream</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pan, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                    <li>Add Korma Paste: Stir in korma paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric, coriander powder, and salt. Cook until tomatoes soften.</li>
+                    <li>Add Meat and Yogurt: Add meat pieces and yogurt. Cook until meat is tender.</li>
+                    <li>Add Cream: Stir in cream and simmer for 5 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro before serving.</li>
+                </ol>
+            `,
+            'Keema': `
+                <h3>Keema</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams minced meat (beef or lamb)</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>2 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pan, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                    <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Minced Meat: Add minced meat and cook until browned and cooked through.</li>
+                    <li>Garnish: Sprinkle garam masala and garnish with fresh cilantro.</li>
+                </ol>
+            `,
+            'Prawn Masala': `
+                <h3>Prawn Masala</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams prawns, peeled and deveined</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>2 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pan, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                    <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric, red chili powder, coriander powder, and salt. Cook until tomatoes soften.</li>
+                    <li>Add Prawns: Add prawns and cook until they turn pink and are cooked through.</li>
+                    <li>Garnish: Garnish with fresh cilantro before serving.</li>
+                </ol>
+        `,
+        // Add other non-vegan recipes here...
+    };
+
+    const snacksRecipes = {
+            'Samosa': `
+                <h3>Samosa</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>2 cups all-purpose flour</li>
+                    <li>1/4 cup oil</li>
+                    <li>1/2 cup water (as needed)</li>
+                    <li>2 large potatoes, boiled and mashed</li>
+                    <li>1 cup peas, boiled</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tbsp oil</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>Salt to taste</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Dough: Mix flour, oil, and a pinch of salt. Gradually add water to form a soft dough. Cover and set aside.</li>
+                    <li>Prepare Filling: Heat oil in a pan, add cumin seeds, and sauté onions until golden brown. Add potatoes, peas, turmeric, garam masala, red chili powder, and salt. Cook for 5 minutes.</li>
+                    <li>Assemble Samosas: Roll out the dough and cut into squares. Place a spoonful of filling in the center, fold into a triangle, and seal the edges.</li>
+                    <li>Fry: Heat oil in a pan and deep-fry samosas until golden brown. Drain on paper towels.</li>
+                </ol>
+            `,
+            'Pakoras': `
+                <h3>Pakoras</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup besan (gram flour)</li>
+                    <li>1 large potato, thinly sliced</li>
+                    <li>1 large onion, thinly sliced</li>
+                    <li>1 green chili, finely chopped</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>Salt to taste</li>
+                    <li>Oil for deep frying</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Batter: In a bowl, mix besan, cumin seeds, turmeric, red chili powder, and salt. Add water gradually to form a thick batter.</li>
+                    <li>Prepare Vegetables: Add sliced potatoes, onions, and green chili to the batter. Mix well.</li>
+                    <li>Fry Pakoras: Heat oil in a pan and drop spoonfuls of the batter into the hot oil. Fry until golden brown. Drain on paper towels.</li>
+                </ol>
+            `,
+            'Chana Chaat': `
+                <h3>Chana Chaat</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup boiled chickpeas</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>1 tomato, chopped</li>
+                    <li>1 cucumber, chopped</li>
+                    <li>2 tbsp tamarind chutney</li>
+                    <li>1 tsp chaat masala</li>
+                    <li>1/2 tsp cumin powder</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Mix Ingredients: In a large bowl, combine chickpeas, onion, tomato, and cucumber.</li>
+                    <li>Add Chutneys and Spices: Add tamarind chutney, chaat masala, cumin powder, and salt. Mix well.</li>
+                    <li>Garnish: Garnish with fresh cilantro before serving.</li>
+                </ol>
+            `,
+            'Aloo Tikki': `
+                <h3>Aloo Tikki</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>4 large potatoes, boiled and mashed</li>
+                    <li>1/2 cup bread crumbs</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp garam masala</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>Salt to taste</li>
+                    <li>Oil for frying</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Mixture: In a bowl, mix mashed potatoes, bread crumbs, cumin seeds, garam masala, red chili powder, and salt.</li>
+                    <li>Form Tikkis: Shape the mixture into small, flat patties.</li>
+                    <li>Fry: Heat oil in a pan and fry the tikkis until golden brown on both sides. Drain on paper towels.</li>
+                </ol>
+            `,
+            'Dahi Puri': `
+                <h3>Dahi Puri</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>20 puris (store-bought or homemade)</li>
+                    <li>1 cup yogurt</li>
+                    <li>1/2 cup tamarind chutney</li>
+                    <li>1/2 cup green chutney</li>
+                    <li>1/4 cup sev</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>1 tomato, chopped</li>
+                    <li>1/2 tsp chaat masala</li>
+                    <li>Salt to taste</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Puri: Arrange puris on a serving plate.</li>
+                    <li>Assemble: Top each puri with a spoonful of yogurt, tamarind chutney, and green chutney.</li>
+                    <li>Add Garnishes: Sprinkle with sev, chopped onion, tomato, chaat masala, and salt.</li>
+                </ol>
+            `,
+            'Paneer Tikka': `
+                <h3>Paneer Tikka</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>250 grams paneer, cut into cubes</li>
+                    <li>1 cup yogurt</li>
+                    <li>2 tbsp tikka masala</li>
+                    <li>1 tbsp lemon juice</li>
+                    <li>1 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1 tbsp oil</li>
+                    <li>Salt to taste</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Marinate Paneer: In a bowl, mix yogurt, tikka masala, lemon juice, turmeric, red chili powder, oil, and salt. Add paneer cubes and marinate for at least 1 hour.</li>
+                    <li>Grill or Bake: Preheat the grill or oven to 200°C (400°F). Skewer the marinated paneer and grill or bake for 15-20 minutes until slightly charred.</li>
+                </ol>
+            `,
+            'Pesarattu': `
+                <h3>Pesarattu</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup green gram (moong dal), soaked overnight</li>
+                    <li>1 green chili</li>
+                    <li>1/2 inch ginger piece</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Batter: Drain soaked moong dal and blend with green chili, ginger, and salt into a smooth batter.</li>
+                    <li>Cook Pancakes: Heat a non-stick pan and pour a ladle of batter. Spread into a circle and cook until golden brown on both sides.</li>
+                    <li>Serve: Serve hot with chutney or sambar.</li>
+                </ol>
+            `,
+            'Hara Bhara Kabab': `
+                <h3>Hara Bhara Kabab</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup spinach, blanched and chopped</li>
+                    <li>1/2 cup peas, boiled and mashed</li>
+                    <li>2 large potatoes, boiled and mashed</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Mixture: Mix spinach, peas, potatoes, cumin seeds, coriander powder, garam masala, and salt.</li>
+                    <li>Form Kababs: Shape the mixture into small patties.</li>
+                    <li>Cook: Heat oil in a pan and cook the kababs until golden brown on both sides. Serve hot.</li>
+                </ol>
+            `,
+            'Aloo Chaat': `
+                <h3>Aloo Chaat</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>3 large potatoes, boiled and diced</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>1 tomato, chopped</li>
+                    <li>1/2 cup tamarind chutney</li>
+                    <li>1/2 cup green chutney</li>
+                    <li>1 tsp chaat masala</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Combine Ingredients: In a bowl, mix potatoes, onion, tomato, tamarind chutney, green chutney, chaat masala, and salt.</li>
+                    <li>Garnish: Garnish with fresh cilantro before serving.</li>
+                </ol>
+            `,
+            'Vegetable Spring Rolls': `
+                <h3>Vegetable Spring Rolls</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>10 spring roll wrappers</li>
+                    <li>1 cup mixed vegetables (cabbage, carrots, bell peppers), finely chopped</li>
+                    <li>2 tbsp soy sauce</li>
+                    <li>1 tsp ginger-garlic paste</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Filling: Heat oil in a pan, add ginger-garlic paste, and sauté vegetables until tender. Add soy sauce and salt. Cook for a few more minutes.</li>
+                    <li>Assemble Rolls: Place a spoonful of filling on each wrapper and roll tightly, sealing the edges with a little water.</li>
+                    <li>Fry: Heat oil in a pan and fry the rolls until golden brown. Drain on paper towels and serve hot.</li>
+                </ol>
+        `,
+        // Add other snacks recipes here...
+    };
+
+    const breakfastRecipes = {
+        'Pancakes': `
+            <h3>Pancakes</h3>
+            <h4>Ingredients:</h4>
+            <ul>
+                <li>1 cup all-purpose flour</li>
+                <li>2 tbsp sugar</li>
+                <li>1 tbsp baking powder</li>
+                <li>1/2 tsp salt</li>
+                <li>1 cup milk</li>
+                <li>1 egg</li>
+                <li>2 tbsp melted butter</li>
+            </ul>
+            <h4>Instructions:</h4>
+            <ol>
+                <li>Prepare Batter: In a bowl, mix flour, sugar, baking powder, and salt. In another bowl, whisk milk, egg, and melted butter. Combine wet and dry ingredients to form a batter.</li>
+                <li>Cook Pancakes: Heat a non-stick pan, pour a ladle of batter, and cook until bubbles form on the surface. Flip and cook the other side until golden brown.</li>
+                <li>Serve: Serve with syrup and butter.</li>
+            </ol>
+        `,
+            'Poha': `
+                <h3>Poha</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup poha (flattened rice)</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>1 potato, diced</li>
+                    <li>1 green chili, finely chopped</li>
+                    <li>1/4 cup peanuts</li>
+                    <li>1/2 tsp mustard seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp sugar</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                    <li>Fresh cilantro for garnish</li>
+                    <li>1 lemon, for squeezing</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Poha: Rinse poha in water and drain. Set aside.</li>
+                    <li>Cook Potatoes: Heat oil in a pan, add mustard seeds, and let them splutter. Add potatoes and cook until tender.</li>
+                    <li>Sauté Onions: Add onions and green chili. Sauté until onions are translucent.</li>
+                    <li>Add Peanuts and Spices: Add peanuts, turmeric powder, sugar, and salt. Mix well.</li>
+                    <li>Combine: Add poha to the pan and mix gently. Cook for a few minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and squeeze lemon juice before serving.</li>
+                </ol>
+            `,
+            'Idli': `
+                <h3>Idli</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup urad dal (black gram dal)</li>
+                    <li>2 cups rice</li>
+                    <li>1/2 tsp fenugreek seeds</li>
+                    <li>Salt to taste</li>
+                    <li>Water as needed</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Soak Dal and Rice: Soak urad dal, rice, and fenugreek seeds separately in water for at least 8 hours or overnight.</li>
+                    <li>Grind: Grind the soaked dal and rice separately into a smooth batter, adding water as needed. Combine both batters in a large bowl and add salt.</li>
+                    <li>Ferment: Cover the bowl and let the batter ferment in a warm place for 12-24 hours.</li>
+                    <li>Steam: Pour the batter into idli molds and steam for 10-15 minutes until cooked.</li>
+                </ol>
+            `,
+            'Dosa': `
+                <h3>Dosa</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup rice</li>
+                    <li>1/4 cup urad dal</li>
+                    <li>1/4 tsp fenugreek seeds</li>
+                    <li>1/2 tsp salt</li>
+                    <li>Water as needed</li>
+                    <li>Oil for cooking</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Soak and Grind: Soak rice, urad dal, and fenugreek seeds in water for at least 4 hours. Grind into a smooth batter, adding water as needed. Add salt.</li>
+                    <li>Ferment: Let the batter ferment in a warm place for 8-12 hours.</li>
+                    <li>Cook Dosas: Heat a non-stick pan, lightly grease with oil, and pour a ladle of batter. Spread into a thin circle. Cook until crispy and golden brown.</li>
+                </ol>
+            `,
+            'Upma': `
+                <h3>Upma</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup semolina (rava)</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>1 green chili, finely chopped</li>
+                    <li>1/2 cup mixed vegetables (carrots, peas, beans)</li>
+                    <li>1 tsp mustard seeds</li>
+                    <li>1/2 tsp urad dal</li>
+                    <li>1/2 tsp chana dal</li>
+                    <li>1/4 cup peanuts</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Roast Semolina: Dry roast semolina in a pan until light golden. Set aside.</li>
+                    <li>Cook Vegetables: Heat oil in a pan, add mustard seeds, urad dal, chana dal, and peanuts. Sauté until dals turn golden. Add onions, green chili, and vegetables. Cook until vegetables are tender.</li>
+                    <li>Add Semolina: Add roasted semolina and salt. Mix well and cook for a few minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro before serving.</li>
+                </ol>
+            `,
+            'Paratha': `
+                <h3>Paratha</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>2 cups whole wheat flour</li>
+                    <li>1/2 tsp salt</li>
+                    <li>1/2 cup water (as needed)</li>
+                    <li>2 tbsp oil or ghee</li>
+                    <li>Stuffing (optional): Mashed potatoes, paneer, or mixed vegetables</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Dough: Mix flour, salt, and water to form a soft dough. Divide into small balls.</li>
+                    <li>Roll Out: Roll each ball into a flat circle. Add stuffing if desired, fold, and roll out again.</li>
+                    <li>Cook: Heat a griddle, place the paratha, and cook on both sides with oil or ghee until golden brown.</li>
+                </ol>
+            `,
+            'Aloo Paratha': `
+                <h3>Aloo Paratha</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>2 cups whole wheat flour</li>
+                    <li>2 large potatoes, boiled and mashed</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>1 green chili, finely chopped</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil or ghee</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Dough: Mix flour, salt, and water to form a soft dough. Divide into small balls.</li>
+                    <li>Prepare Filling: Mix mashed potatoes, onions, green chili, cumin seeds, turmeric powder, garam masala, and salt.</li>
+                    <li>Assemble Parathas: Roll each dough ball, place a spoonful of filling in the center, fold, and roll out again.</li>
+                    <li>Cook: Heat a griddle, place the paratha, and cook on both sides with oil or ghee until golden brown.</li>
+                </ol>
+            `,
+            'Pongal': `
+                <h3>Pongal</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup rice</li>
+                    <li>1/4 cup moong dal</li>
+                    <li>1/2 tsp mustard seeds</li>
+                    <li>1/4 tsp cumin seeds</li>
+                    <li>1/4 cup cashews</li>
+                    <li>1 green chili, chopped</li>
+                    <li>1/2 inch ginger, chopped</li>
+                    <li>2 tbsp ghee</li>
+                    <li>Salt to taste</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Roast Dal: Dry roast moong dal in a pan until light golden. Set aside.</li>
+                    <li>Cook Rice and Dal: In a pressure cooker, add rice, roasted dal, water, and salt. Cook for 3-4 whistles.</li>
+                    <li>Prepare Tempering: Heat ghee in a pan, add mustard seeds, cumin seeds, cashews, green chili, and ginger. Sauté until golden brown.</li>
+                    <li>Combine: Add the tempering to the cooked rice and dal mixture. Mix well.</li>
+                </ol>
+            `,
+            'Methi Thepla': `
+                <h3>Methi Thepla</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>2 cups whole wheat flour</li>
+                    <li>1 cup fresh fenugreek leaves (methi), chopped</li>
+                    <li>1 tsp carom seeds (ajwain)</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp cumin powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Dough: Mix flour, fenugreek leaves, carom seeds, turmeric, cumin powder, red chili powder, salt, and oil. Add water as needed to form a soft dough.</li>
+                    <li>Roll Out: Divide dough into small balls, roll each into a thin circle.</li>
+                    <li>Cook: Heat a griddle, place the thepla, and cook on both sides with a little oil until golden brown.</li>
+                </ol>
+            `,
+            'Chole Bhature': `
+                <h3>Chole Bhature</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>For Chole:</li>
+                    <li>1 cup chickpeas, soaked overnight</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>For Bhature:</li>
+                    <li>2 cups all-purpose flour</li>
+                    <li>1/4 cup yogurt</li>
+                    <li>1/2 tsp baking powder</li>
+                    <li>1/2 tsp sugar</li>
+                    <li>Salt to taste</li>
+                    <li>Water as needed</li>
+                    <li>Oil for deep frying</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Cook Chole: In a pressure cooker, cook soaked chickpeas with salt, coriander powder, turmeric powder, and water until soft. In a pan, heat oil, add cumin seeds, onions, and ginger-garlic paste. Sauté until golden, then add tomatoes and spices. Combine with cooked chickpeas and simmer for 10 minutes.</li>
+                    <li>Prepare Bhature Dough: Mix flour, yogurt, baking powder, sugar, and salt. Add water to form a soft dough. Let it rest for 2 hours.</li>
+                    <li>Fry Bhature: Divide dough into balls, roll out into circles, and deep fry in hot oil until puffed and golden brown.</li>
+                </ol>
+            `,
+            'Puri Bhaji': `
+                <h3>Puri Bhaji</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>For Puri:</li>
+                    <li>2 cups all-purpose flour</li>
+                    <li>1/2 tsp salt</li>
+                    <li>1/4 tsp carom seeds (ajwain)</li>
+                    <li>1/4 cup water (as needed)</li>
+                    <li>Oil for deep frying</li>
+                    <li>For Bhaji:</li>
+                    <li>2 large potatoes, boiled and mashed</li>
+                    <li>1 onion, chopped</li>
+                    <li>1 tomato, chopped</li>
+                    <li>1 green chili, chopped</li>
+                    <li>1 tsp mustard seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp cumin seeds</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Puri Dough: Mix flour, salt, and carom seeds. Add water to form a soft dough. Divide into small balls.</li>
+                    <li>Roll Out and Fry Puri: Roll each ball into a small circle and deep fry in hot oil until puffed and golden brown.</li>
+                    <li>Prepare Bhaji: Heat oil in a pan, add mustard seeds, cumin seeds, onions, green chili, and sauté until onions are golden. Add tomatoes, turmeric powder, and salt. Cook until tomatoes are soft, then add mashed potatoes and mix well.</li>
+                </ol>
+            `,
+            'Oats Upma': `
+                <h3>Oats Upma</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup oats</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>1 green chili, finely chopped</li>
+                    <li>1/2 cup mixed vegetables (carrots, peas, beans), chopped</li>
+                    <li>1 tsp mustard seeds</li>
+                    <li>1/2 tsp cumin seeds</li>
+                    <li>1/4 tsp turmeric powder</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Cook Vegetables: Heat oil in a pan, add mustard seeds and cumin seeds. Once they splutter, add onions, green chili, and vegetables. Sauté until vegetables are tender.</li>
+                    <li>Add Oats: Add oats, turmeric powder, and salt. Mix well and cook for 2-3 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve hot.</li>
+                </ol>
+            `,
+            'Besan Chilla': `
+                <h3>Besan Chilla</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup besan (gram flour)</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>1 tomato, chopped</li>
+                    <li>1 green chili, chopped</li>
+                    <li>1/4 cup chopped coriander leaves</li>
+                    <li>1/2 tsp cumin seeds</li>
+                    <li>1/4 tsp turmeric powder</li>
+                    <li>1/4 tsp red chili powder</li>
+                    <li>Salt to taste</li>
+                    <li>Water as needed</li>
+                    <li>Oil for cooking</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Batter: In a bowl, mix besan, onion, tomato, green chili, coriander leaves, cumin seeds, turmeric powder, red chili powder, and salt. Add water to form a smooth batter.</li>
+                    <li>Cook Chillas: Heat a non-stick pan, lightly grease with oil. Pour a ladle of batter and spread into a thin circle. Cook until golden brown on both sides.</li>
+                </ol>
+`,
+        // Add other breakfast recipes here...
+    };
+    const both = {
+            'Paneer Butter Masala': `
+                <h3>Paneer Butter Masala</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>200 grams paneer (cottage cheese), cubed</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, pureed</li>
+                    <li>2 tbsp butter</li>
+                    <li>1/2 cup cream</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Butter: In a pan, melt butter and add cumin seeds.</li>
+                    <li>Sauté Onions: Add onions and cook until golden brown.</li>
+                    <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for a few minutes.</li>
+                    <li>Add Tomato Puree: Add tomato puree, red chili powder, turmeric powder, and salt. Cook until oil separates.</li>
+                    <li>Add Paneer: Add paneer cubes and cook for 5 minutes.</li>
+                    <li>Add Cream: Stir in cream and garam masala. Simmer for 2 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with naan or rice.</li>
+                </ol>
+            `,
+            'Chana Masala': `
+                <h3>Chana Masala</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup chickpeas, soaked overnight</li>
+                    <li>1 onion, chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Cook Chickpeas: In a pressure cooker, cook chickpeas with salt and water until soft.</li>
+                    <li>Prepare Masala: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, coriander powder, turmeric, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Chickpeas: Add cooked chickpeas and some of the cooking water. Simmer for 10 minutes.</li>
+                    <li>Add Garam Masala: Stir in garam masala and cook for a few more minutes.</li>
+                </ol>
+            `,
+            'Baingan Bharta': `
+                <h3>Baingan Bharta</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 large eggplant</li>
+                    <li>1 onion, chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Roast Eggplant: Roast eggplant over an open flame or in an oven until the skin is charred. Cool and peel the skin off. Mash the flesh.</li>
+                    <li>Prepare Masala: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Eggplant: Add the mashed eggplant and cook for 5-10 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with roti or rice.</li>
+                </ol>
+            `,
+            'Palak Paneer': `
+                <h3>Palak Paneer</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>200 grams paneer (cottage cheese), cubed</li>
+                    <li>2 cups spinach leaves</li>
+                    <li>1 onion, chopped</li>
+                    <li>2 tomatoes, pureed</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                    <li>Fresh cream for garnish (optional)</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Blanch Spinach: Blanch spinach leaves in boiling water, then transfer to ice water. Blend into a smooth paste.</li>
+                    <li>Prepare Masala: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomato Puree and Spices: Add tomato puree, turmeric powder, red chili powder, and salt. Cook until oil separates.</li>
+                    <li>Add Spinach Paste and Paneer: Add spinach paste and cook for 5 minutes. Add paneer cubes and garam masala. Cook for another 5 minutes.</li>
+                    <li>Garnish: Garnish with fresh cream if desired and serve with roti or rice.</li>
+                </ol>
+            `,
+            'Rajma': `
+                <h3>Rajma</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup kidney beans, soaked overnight</li>
+                    <li>1 onion, chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Cook Kidney Beans: In a pressure cooker, cook soaked kidney beans with salt and water until soft.</li>
+                    <li>Prepare Masala: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, coriander powder, turmeric powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Beans: Add cooked kidney beans and some of the cooking water. Simmer for 10 minutes.</li>
+                    <li>Add Garam Masala: Stir in garam masala and cook for a few more minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with rice or roti.</li>
+                </ol>
+            `,
+            'Butter Chicken': `
+                <h3>Butter Chicken</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams chicken, boneless and skinless, cubed</li>
+                    <li>1 cup yogurt</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, pureed</li>
+                    <li>2 tbsp butter</li>
+                    <li>1/2 cup cream</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Marinate Chicken: Mix chicken with yogurt, ginger-garlic paste, and salt. Marinate for at least 1 hour.</li>
+                    <li>Cook Chicken: Grill or pan-fry the marinated chicken until cooked through. Set aside.</li>
+                    <li>Prepare Sauce: Heat butter in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomato Puree and Spices: Add tomato puree, red chili powder, turmeric powder, and salt. Cook until oil separates.</li>
+                    <li>Add Chicken and Cream: Add cooked chicken and cream. Simmer for 10 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with naan or rice.</li>
+                </ol>
+            `,
+            'Chicken Tikka Masala': `
+                <h3>Chicken Tikka Masala</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams chicken, boneless and skinless, cubed</li>
+                    <li>1 cup yogurt</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, pureed</li>
+                    <li>2 tbsp oil</li>
+                    <li>1/2 cup cream</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>1/2 tsp paprika</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Marinate Chicken: Mix chicken with yogurt, ginger-garlic paste, red chili powder, turmeric powder, and salt. Marinate for at least 1 hour.</li>
+                    <li>Cook Chicken: Grill or pan-fry the marinated chicken until cooked through. Set aside.</li>
+                    <li>Prepare Sauce: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomato Puree and Spices: Add tomato puree, paprika, and salt. Cook until oil separates.</li>
+                    <li>Add Chicken and Cream: Add cooked chicken and cream. Simmer for 10 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with naan or rice.</li>
+                </ol>
+            `,
+            'Prawn Masala': `
+                <h3>Prawn Masala</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams prawns, cleaned and deveined</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Cook Prawns: Heat oil in a pan and sauté prawns until they turn pink. Remove and set aside.</li>
+                    <li>Prepare Masala: In the same pan, add cumin seeds, then onions. Cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Prawns and Garam Masala: Return prawns to the pan, add garam masala, and cook for 5 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with rice or naan.</li>
+                </ol>
+            `,
+            'Chicken Korma': `
+                <h3>Chicken Korma</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams chicken, boneless and skinless, cubed</li>
+                    <li>1 cup yogurt</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, pureed</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1/2 cup cashew nuts, soaked and blended</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Marinate Chicken: Mix chicken with yogurt and salt. Marinate for at least 1 hour.</li>
+                    <li>Prepare Korma Base: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomato Puree and Spices: Add tomato puree, turmeric powder, coriander powder, red chili powder, and salt. Cook until oil separates.</li>
+                    <li>Add Cashew Paste and Chicken: Stir in cashew paste and add marinated chicken. Cook until chicken is done.</li>
+                    <li>Add Garam Masala: Stir in garam masala and cook for a few more minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with naan or rice.</li>
+                </ol>
+            `,
+            'Vegetable Biryani': `
+                <h3>Vegetable Biryani</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup basmati rice</li>
+                    <li>1 cup mixed vegetables (carrots, beans, peas, potatoes)</li>
+                    <li>1 onion, finely sliced</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1/4 cup yogurt</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp biryani masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro and mint leaves for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Cook Rice: Cook basmati rice separately and set aside.</li>
+                    <li>Prepare Masala: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric powder, biryani masala, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Vegetables: Add mixed vegetables and cook until tender.</li>
+                    <li>Layer Biryani: In a pot, layer cooked rice and vegetable masala. Garnish with fresh cilantro and mint leaves. Cover and cook on low heat for 10 minutes.</li>
+                </ol>
+            `,
+            'Aloo Gobi': `
+                <h3>Aloo Gobi</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>2 large potatoes, peeled and cubed</li>
+                    <li>1 cauliflower, cut into florets</li>
+                    <li>1 onion, chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pan, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                    <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric powder, coriander powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Potatoes and Cauliflower: Add potatoes and cauliflower. Cook until vegetables are tender.</li>
+                    <li>Add Garam Masala: Stir in garam masala and cook for a few minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with roti or rice.</li>
+                </ol>
+            `,
+            'Tandoori Chicken': `
+                <h3>Tandoori Chicken</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams chicken, bone-in</li>
+                    <li>1 cup yogurt</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tbsp tandoori masala</li>
+                    <li>1 tsp red chili powder</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp cumin powder</li>
+                    <li>1/2 tsp coriander powder</li>
+                    <li>1 tbsp lemon juice</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Marinate Chicken: Mix yogurt, ginger-garlic paste, tandoori masala, red chili powder, turmeric powder, cumin powder, coriander powder, lemon juice, and salt. Marinate chicken for at least 2 hours.</li>
+                    <li>Cook Chicken: Grill or bake the marinated chicken until cooked through and slightly charred.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with naan or rice.</li>
+                </ol>
+            `,
+            'Kadai Paneer': `
+                <h3>Kadai Paneer</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>200 grams paneer (cottage cheese), cubed</li>
+                    <li>1 onion, chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 bell pepper, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pan, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown.</li>
+                    <li>Add Ginger-Garlic Paste: Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, coriander powder, turmeric powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Bell Pepper and Paneer: Add bell pepper and paneer cubes. Cook for 5 minutes.</li>
+                    <li>Add Garam Masala: Stir in garam masala and cook for a few more minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with roti or rice.</li>
+                </ol>
+            `,
+            'Egg Curry': `
+                <h3>Egg Curry</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>4 boiled eggs, peeled</li>
+                    <li>1 onion, chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Masala: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, coriander powder, turmeric powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Eggs: Add boiled eggs to the pan and cook for 5 minutes.</li>
+                    <li>Add Garam Masala: Stir in garam masala and cook for a few more minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with rice or roti.</li>
+                </ol>
+            `,
+            'Vegetable Korma': `
+                <h3>Vegetable Korma</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup mixed vegetables (carrots, beans, peas, potatoes)</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, pureed</li>
+                    <li>1/2 cup yogurt</li>
+                    <li>1/4 cup cashew nuts, soaked and blended</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Korma Base: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomato puree, turmeric powder, coriander powder, red chili powder, and salt. Cook until oil separates.</li>
+                    <li>Add Vegetables: Add mixed vegetables and cook until tender.</li>
+                    <li>Add Cashew Paste and Yogurt: Stir in cashew paste and yogurt. Cook for 5 minutes.</li>
+                    <li>Add Garam Masala: Stir in garam masala and cook for a few more minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with naan or rice.</li>
+                </ol>
+            `,
+            'Mutton Curry': `
+                <h3>Mutton Curry</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>500 grams mutton, bone-in</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1 tsp garam masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Heat Oil: In a pressure cooker, heat oil and add cumin seeds.</li>
+                    <li>Sauté Onions: Add chopped onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, coriander powder, turmeric powder, red chili powder, and salt. Cook until oil separates.</li>
+                    <li>Add Mutton: Add mutton and cook until browned. Add water and cook under pressure until mutton is tender.</li>
+                    <li>Add Garam Masala: Stir in garam masala and cook for a few more minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with rice or roti.</li>
+                </ol>
+            `,
+            'Palak Paneer': `
+                <h3>Palak Paneer</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>200 grams paneer (cottage cheese), cubed</li>
+                    <li>2 cups spinach leaves, chopped</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1/2 tsp garam masala</li>
+                    <li>2 tbsp oil</li>
+                    <li>Salt to taste</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Blanch Spinach: Blanch spinach leaves in boiling water, then immediately transfer to ice water. Blend to make a smooth puree.</li>
+                    <li>Prepare Masala: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric powder, coriander powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Spinach Puree: Stir in spinach puree and cook for 5 minutes.</li>
+                    <li>Add Paneer: Add paneer cubes and cook for a few more minutes.</li>
+                    <li>Add Garam Masala: Stir in garam masala and cook for a few minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with roti or rice.</li>
+                </ol>
+            `,
+            'Chana Masala': `
+                <h3>Chana Masala</h3>
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup chickpeas, soaked overnight and cooked</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 tomatoes, chopped</li>
+                    <li>1 tbsp ginger-garlic paste</li>
+                    <li>1 tsp cumin seeds</li>
+                    <li>1/2 tsp turmeric powder</li>
+                    <li>1 tsp coriander powder</li>
+                    <li>1/2 tsp red chili powder</li>
+                    <li>1 tsp chana masala</li>
+                    <li>Salt to taste</li>
+                    <li>2 tbsp oil</li>
+                    <li>Fresh cilantro for garnish</li>
+                </ul>
+                <h4>Instructions:</h4>
+                <ol>
+                    <li>Prepare Masala: Heat oil in a pan, add cumin seeds, and let them splutter. Add onions and cook until golden brown. Stir in ginger-garlic paste and cook for 2 minutes.</li>
+                    <li>Add Tomatoes and Spices: Add tomatoes, turmeric powder, coriander powder, red chili powder, and salt. Cook until tomatoes are soft.</li>
+                    <li>Add Chickpeas: Add cooked chickpeas and chana masala. Cook for 10 minutes.</li>
+                    <li>Garnish: Garnish with fresh cilantro and serve with rice or roti.</li>
+                </ol>
+            `,
+        // Add other breakfast recipes here...
+    };
+
+    document.getElementById('vegButton').addEventListener('click', () => {
+        displayRecipeList(veganRecipes);
+    });
+
+    document.getElementById('nonVegButton').addEventListener('click', () => {
+        displayRecipeList(nonVeganRecipes);
+    });
+
+    document.getElementById('snacksButton').addEventListener('click', () => {
+        displayRecipeList(snacksRecipes);
+    });
+
+    document.getElementById('breakfastButton').addEventListener('click', () => {
+        displayRecipeList(breakfastRecipes);
+    });
+    document.getElementById('bothButton').addEventListener('click', () => {
+        displayRecipeList(both);
+    });
+
+   
+        <footer>
+            <p>&copy;2024 COOkIn Bot.All rights reserved</p>
+        </footer>
+    </body>
+</html>
